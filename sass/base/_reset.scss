@@ -1,0 +1,63 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+* {
+
+    text-decoration: none;
+    outline: var(--background-color2);
+}
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: var(--background-color1);
+    background: var(--background-color2);
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.pic {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--work-color);
+    margin-top: 0;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,100 @@
+.hero {
+    min-width: 100%;
+    max-width: 100%;
+    background: var(--order-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/fon-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__title {
+    width: 100%;
+    color: var(--desigion-color);
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 30px;
+    @media screen and (min-width: 480px) {
+    max-width: 767px;
+    font-weight: 900;
+        font-size: 26px;
+        line-height: calc(42 / 26);
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 1199px;
+        font-weight: 900;
+            font-size: 26px;
+            line-height: calc(42 / 26);
+            text-align: center;
+            letter-spacing: 0.06em;
+    }    
+        @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636;
+    text-align: center;
+    letter-spacing: 0.06em;  
+    text-transform: uppercase;
+    
+}
+}
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+    letter-spacing: 0.06em;
+    background: var(--button-push-background);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--order-button-color);
+    border: 0;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    &:hover {
+            background-color: var(--button-push-active);
+        }
+    
+    &:focus {
+            background-color: var(--button-push-active);
+        }
+    
+    &:active {
+            background-color: var(--button-push-active);
+        }
+}
+
+
+
+.order__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--order-button-color);
+}
