@@ -1,12 +1,23 @@
+
+
+
 .header {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.02em;
     border-bottom: 1px solid var(--border);
+        @media screen and (max-width: 767px) {
+                min-width: 480px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 60px;
+            }
 }
 
 .container-heder {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,4 +125,12 @@
         .contacts__telefon:focus & {
             fill: var(--links-conact-hover-focus);
         }
+}
+
+@media screen and (max-width: 767px) {
+    .menu,
+    .contacts {
+        display: none;
+    }
+
 }

@@ -38,6 +38,11 @@ button {
     cursor: pointer;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -61,3 +66,8 @@ button {
     margin-top: 0;
     margin-bottom: 50px;
 }
+
+.header {
+    display: contents;
+}
+
