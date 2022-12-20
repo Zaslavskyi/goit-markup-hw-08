@@ -2,6 +2,11 @@
     background: var(--team-color-background);
 }
 
+    @media screen and (max-width: 1199px) {
+        .team .title {
+    font-size: 28px;
+}
+}
 .team__list {
     display: flex;
     gap: 30px;
