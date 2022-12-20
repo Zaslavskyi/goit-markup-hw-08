@@ -1315,6 +1315,12 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -1393,6 +1399,12 @@ img {
   /*
   text-decoration:underline; */
   box-shadow: 0px 1px 3px var(--button-push-background);
+}
+@media screen and (max-width: 1199px) {
+  .agree {
+    font-size: 12px;
+    margin-left: 0;
+  }
 }
 
 .agree span {
