@@ -77,9 +77,23 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .pic {
@@ -99,6 +113,12 @@ button {
   color: var(--work-color);
   margin-top: 0;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 767px) {
+  .title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 }
 
 .header {
@@ -161,7 +181,6 @@ button {
 }
 @media screen and (max-width: 767px) {
   .header {
-    min-width: 480px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -285,6 +304,8 @@ button {
   padding: 0;
   border: none;
   background-color: transparent;
+  width: 40px;
+  height: 40px;
 }
 @media screen and (min-width: 767px) {
   .menu-button {
@@ -307,8 +328,8 @@ button {
 .menu-container {
   width: 100%;
   display: none;
-  position: absolute;
-  top: 60px;
+  position: fixed;
+  top: 0;
   left: 0;
   height: 100%;
   background-color: #fff;
@@ -555,8 +576,8 @@ button {
   min-width: 100%;
   max-width: 100%;
   background: var(--order-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon-main.jpg);
   background-repeat: no-repeat;
@@ -571,6 +592,7 @@ button {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 30px;
+  text-align: center;
 }
 @media screen and (min-width: 480px) {
   .hero__title {
@@ -580,6 +602,7 @@ button {
     line-height: 1.6153846154;
     text-align: center;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 }
 @media screen and (min-width: 768px) {
@@ -819,6 +842,7 @@ button {
   /*flex-basis: calc((100% - 90px) / 4); */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .team__item {
@@ -900,6 +924,12 @@ button {
   fill: var(--team-list-background);
 }
 
+.comand-pic {
+  min-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .client__icon {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -931,7 +961,7 @@ button {
     flex-wrap: wrap;
   }
   .clients__list .client__item {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 768px) {
@@ -951,24 +981,18 @@ button {
   }
 }
 
-.client__item {
-  width: 100%;
-}
 @media screen and (min-width: 320px) {
   .client__item {
-    width: 100%;
     flex-basis: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 768px) {
   .client__item {
-    width: 100%;
     flex-basis: calc((100% - 90px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .client__item {
-    width: 100%;
     flex-basis: calc((100% - 150px) / 6);
   }
 }
@@ -1043,6 +1067,12 @@ button {
   }
 }
 
+/*
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .footer__social {
+
+    }
+} */
 .footer__logo-link {
   display: inline-block;
   justify-content: flex-start;
@@ -1094,11 +1124,12 @@ button {
     align-items: baseline;
   }
 }
+/*
 @media screen and (max-width: 1199px) {
-  .footer__block {
-    margin-bottom: 60px;
-  }
-}
+    .footer__block {
+        margin-bottom: 60px;
+    }
+} . */
 .footer__social-list {
   display: flex;
   gap: 10px;
@@ -1191,19 +1222,27 @@ button {
   border-color: var(--links-hover);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .subscribe__form {
     display: contents;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
   .subscribe__form {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .subscribe__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .subscribe__button {
@@ -1223,6 +1262,11 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe__button {
     margin-top: 20px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe__button {
     margin-bottom: 60px;
   }
 }
