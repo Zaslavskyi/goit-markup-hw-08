@@ -306,7 +306,13 @@ img {
   background-color: transparent;
   width: 40px;
   height: 40px;
-  display: none;
+  /*  display: none; */
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-left: auto;
+  position: relative;
+  z-index: 3;
   z-index: 1;
   align-items: center;
 }
@@ -355,7 +361,7 @@ img {
 }
 
 .icon-menu-mob {
-  width: 24;
+  width: 24px;
   height: 16px;
 }
 
@@ -363,15 +369,6 @@ img {
   width: 18.67px;
   height: 18.67px;
   z-index: 2;
-}
-
-.mob-button {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
 }
 
 .mobile-navigation__item {
@@ -565,15 +562,11 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
