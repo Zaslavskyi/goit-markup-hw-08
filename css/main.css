@@ -1077,12 +1077,11 @@ img {
    }   */
 }
 
-/*
 @media screen and (min-width: 480px) and (max-width: 767px) {
-    .footer__social {
-
-    }
-} */
+  .footer__social {
+    display: contents;
+  }
+}
 .footer__logo-link {
   display: inline-block;
   justify-content: flex-start;
