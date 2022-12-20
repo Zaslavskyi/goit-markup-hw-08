@@ -306,6 +306,8 @@ img {
   background-color: transparent;
   width: 40px;
   height: 40px;
+  z-index: 1;
+  align-items: center;
 }
 @media screen and (min-width: 767px) {
   .menu-button {
@@ -359,6 +361,7 @@ img {
 .icon-close-mob {
   width: 18.67px;
   height: 18.67px;
+  z-index: 2;
 }
 
 .mob-button {
@@ -444,8 +447,10 @@ img {
 
 .mobile-social {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 40px;
   margin-top: 64px;
+  padding-bottom: 20px;
   gap: 10px;
 }
 
