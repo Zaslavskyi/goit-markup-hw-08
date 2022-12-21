@@ -24,6 +24,13 @@
 }
 }
 
+@media screen and (max-width: 767px) {
+    .footer__logo {
+        margin-bottom: 60px;
+    }
+    
+}
+
 
 .footer__logo-soc {
     display: flex;
@@ -51,14 +58,15 @@
 }
 
 .footer__social {
+    margin-left: auto;
+    
+    @media screen and (min-width: 1200px) {
     margin-left: 70px;
-   /* @media screen and (max-width: 768px) {
-        margin-left: auto;
-    }   */
+    }   
 }
 
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .footer__social {
     display: contents;
     }
