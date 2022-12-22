@@ -96,7 +96,7 @@
     align-items: center;
     font-weight: 400;
     font-size: 14px;
-    line-height: 0.0119;
+    line-height: 1.1666;
     letter-spacing: 0.03em;
     color: var(--advantage-title-color);
     margin-bottom: 30px;
@@ -110,7 +110,9 @@
 
     @media screen and (max-width: 1199px) {
         font-size: 12px;
+        line-height: 1.1666;
         margin-left: 0;
+        line-height: 1.7142;
     }
 }
 
